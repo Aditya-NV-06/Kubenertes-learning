@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongosrc
+spec:
+  selector:
+    app: mongo
+  type: NodePort
+  ports:
+  - name: mongo
+    protocol: TCP
+    port: 80
+    targetPort: 5000
+    nodePort: 30001
+
+

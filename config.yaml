@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myconfig
+  namespace: default
+data:
+  key: |
+    app_version: 1.0
+    type: build
+
