@@ -10,6 +10,7 @@ spec:
     ports:
     - containerPort: 3000  # Corrected from 'containerPorts' to 'containerPort'
     env:
+    - name: APP_VERSION
       valueFrom:
         configMapKeyRef:
           name: app
@@ -21,4 +22,3 @@ spec:
       requests:
         cpu: 100m
         memory: 200Mi  # This line is already correct
-
